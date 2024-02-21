@@ -1,7 +1,7 @@
 def print_math_compound_interest(principle, rate, time):
-    totalAmount = principle*(1 + rate / 100)**time
+    totalAmount = principle *( 1 + rate / 100) ** time
  
-    print('Compount Interest: ' + str(round(totalAmount - principle,2)))
+    print('Compound Interest: ' + str(round(totalAmount - principle,2)))
 
 def collect_inputs_and_convert_to_float():    
 # This first 3 lines are provided for you getACompoundInterest()
@@ -11,7 +11,7 @@ def collect_inputs_and_convert_to_float():
 
     return client_principal, client_time, client_rate
 
-def calculateComputInterest():
+def calculateCompoundInterest():
     line_brake = '---'
 
     client_principal_1, client_rate_1, client_time_1 = collect_inputs_and_convert_to_float()
@@ -34,4 +34,4 @@ def calculateComputInterest():
 ## If you want to test locally run > python compoundInterest.py
 
 if __name__ == "__main__":
-    calculateComputInterest()
+    calculateCompoundInterest()
